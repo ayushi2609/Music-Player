@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Music Player</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="logo-right" style="list-style-type:none;">
+            <li><span><img src="image/logo.png" height="50px"></span></li>
+            <li class="ns">
+                <div class="ninja">Ninja</div>
+                <div class="studio">Studio</div>
+            </li>
+            <li class="fav"><a href="#"><span><i class="fas fa-heart logo-white"></i></span><span
+                        class="fav-text">Favourites</span></a>
+            </li>
+        </ul>
+
+
+        <div>
+            <div class="search-container">
+                <i class="fas fa-search logo-gray"></i>
+                <input type="text" placeholder="Search" class="input-field">
+                <i class="fas fa-microphone logo-gray"></i>
+            </div>
+        </div>
+        <span class="bell"><a href="#"><i class="fas fa-bell logo-white"></i></a></span>
+        <img src="moon.png" id="icon">
+        <span><a href="#"><img class="user-img" src="image/Ayushi.jpeg" height="50px"></a></span>
+
+    </nav>
+
+    <!-- cover image -->
+    <div class="main-container">
+        <ul class="cover-image">
+            <li><a href="#"><img src="image/Anne_Marie.jpg"
+                        onClick="document.getElementById('friends_song_play').play(); return false;"></a></li>
+            <li><a href="#"><img src="image/Dua_lipa.jpg"
+                        onClick="document.getElementById('Levitating_song_play').play(); return false;"></a></li>
+            <li><a href="#"><img src="image/Maroon5.jpg"
+                        onClick="document.getElementById('girls-like-you').play(); return false;"></a></li>
+        </ul>
+
+        <!-- Latest Release -->
+        <div class="latest-release">
+            <h2>Latest Release</h2>
+            <div class="card-container">
+                <div class="card">
+                    <a href="">
+                        <img src="image/English/friends.jpg" height=100px width=100px>
+                    </a>
+                    <a href="" class="tx-d-n">
+                        <div class="card-body">
+                            <h3>Friends</h3>
+                            <h6>Anne Marie</h6>
+                        </div>
+                    </a>
+                    <div class="card-body2">
+                        <a href="#"><i class="fa fa-ellipsis-v logo-rt" aria-hidden="true"></i></a>
+                        <p class="duration">4:54</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="image/English/Closer.png" height=100px width=100px></a>
+                    <a href="" class="tx-d-n">
+                        <div class="card-body">
+                            <h3>Closer</h3>
+                            <h6>Chainsmokers</h6>
+                        </div>
+                    </a>
+                    <div class="card-body2">
+                        <a href="#"><i class="fa fa-ellipsis-v logo-rt" aria-hidden="true"></i></a>
+                        <p class="duration">4:54</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <a href=""><img src="image/English/2002.webp" height=100px width=100px></a>
+                    <div class="card-body">
+                        <a href="" class="tx-d-n">
+                            <h3>2002</h3>
+                            <h6>Anne Marie</h6>
+                        </a>
+                    </div>
+                    <div class="card-body2">
+                        <a href="#"><i class="fa fa-ellipsis-v logo-rt" aria-hidden="true"></i></a>
+                        <p class="duration">4:54</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="image/English/Levitating.jfif" height=100px width=100px></a>
+                    <div class="card-body">
+                        <a href="" class="tx-d-n">
+                            <h3>Levitating</h3>
+                            <h6>Dua Lipa</h6>
+                        </a>
+                    </div>
+                    <div class="card-body2">
+                        <a href="#"><i class="fa fa-ellipsis-v logo-rt" aria-hidden="true"></i></a>
+                        <p class="duration">4:54</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Popular Artists -->
+        <div class="popular-artists">
+            <h2>Popular Artists</h2>
+            <ul style="list-style-type:none;">
+                <li><a href=""><img src="image/Artists/charlie_puth.png" height="80px" width="80px"></a>
+                    <div>Charlie Puth</div>
+                </li>
+                <li><a href=""><img src="image/Artists/ed_sheeran.jpg" height="80px" width="80px"></a>
+                    <div>Ed sheeran</div>
+                </li>
+                <li><a href="index2.html"><img src="image/Artists/Coldplay.jfif" height="80px" width="80px"></a>
+                    <div>Coldplay</div>
+                </li>
+                <li><a href=""><img src="image/Artists/Anne_marie.jpg" height="80px" width="80px"></a>
+                    <div>Anne Marie</div>
+                </li>
+                <li><a href=""><img src="image/Artists/zayn_malik.jpg" height="80px" width="80px"></a>
+                    <div>Zayn Malik</div>
+                </li>
+                <li><a href=""><img src="image/Artists/Billie_eilish.jpg" height="80px" width="80px"></a>
+                    <div>Billie Eilish</div>
+                </li>
+                <li><a href=""><img src="image/Artists/justin_bieber.jpg" height="80px" width="80px"></a>
+                    <div>Justin Bieber</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Station -->
+
+        <div class="station">
+
+            <ul style="list-style-type:none;">
+                <span><img class="station-logo" src="image/station-logo.png">
+                    <div>
+                        <h2 style="margin-left: -35px;">Stations</h2>
+                    </div>
+                </span>
+                <li><a href="">
+                        <div><img src="image/Stations/love.jpeg">
+                    </a>
+                    <div>Love</div>
+                </li>
+                <li><a href=""><img src="image/Stations/Retro.jpg"></a>
+                    <div>Retro</div>
+                </li>
+                <li><a href=""><img src="image/Stations/Chill.jpg"></a>
+                    <div>Chill</div>
+                </li>
+                <li><a href=""><img src="image/Stations/Workout.jpg"></a>
+                    <div>Workout</div>
+                </li>
+                <li><a href=""><img src="image/Stations/Rock.jfif"></a>
+                    <div>Rock</div>
+                </li>
+                <li><a href=""><img src="image/Stations/Pop.jpg"></a>
+                    <div>Pop</div>
+                </li>
+                <li><a href=""><img src="image/Stations/hip-hop.jfif"></a>
+                    <div>Hip Hop</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- mood -->
+        <div class="mood">
+            <div class="mode-box"><a href="#"><img src="image/party.jfif" width="225px" height="180px">
+                    <div class="centered left">
+                        <h1>Party</h1>
+                    </div>
+                </a></div>
+            <div class="mode-box"><a href="#"><img src="image/Electronic.jpg" width="225px" height="180px">
+                    <div class="centered">
+                        <h1>Electronic</h1>
+                    </div>
+                </a></div>
+            <div class="mode-box"><a href="#"><img src="image/Road-trip.jpg" width="225px" height="180px">
+                    <div class="centered right">
+                        <h1>Road Trip</h1>
+                    </div>
+                </a> </div>
+        </div>
+
+        <!-- English song-->
+        <div class="english-song">
+            <h2>English Song</h2>
+            <ul style="list-style-type:none;">
+                <li><a href="#">
+                        <div>
+                            <img src="image/English/friends.jpg">
+                            <h4>Friends</h4>
+                            <h6>Anne Marie</h6>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <div>
+                            <img src="image/English/Levitating.jfif">
+                            <h4>Levitating</h4>
+                            <h6>Dua Lipa</h6>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <div>
+                            <img src="image/English/Closer.png">
+                            <h4>Closer</h4>
+                            <h6>The Chainsmokers</h6>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <div>
+                            <img src="image/English/Believer.jpg">
+                            <h4>Believer</h4>
+                            <h6>Imagine Dragons</h6>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <div>
+                            <img src="image/English/2002.webp">
+                            <h4>2002</h4>
+                            <h6>Anne Marie</h6>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <div>
+                            <img src="image/English/Perfect.jfif">
+                            <h4>Perfect</h4>
+                            <h6>Ed Sheeran</h6>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+        <!-- Hindi song -->
+        <div class="hindi-song">
+            <h2>Hindi Song</h2>
+            <ul style="list-style-type:none;">
+                <li><a href="#">
+                        <div>
+                            <img src="image/Hindi/phir-kabhi.jpg">
+                            <h4>Phir Kabhi</h4>
+                            <h6>Malik</h6>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <div>
+                            <img src="image/Hindi/Geerua.jfif">
+                            <h4>Gerua</h4>
+                            <h6>Arijit Singh</h6>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <div>
+                            <img src="image/Hindi/Besabriyaan.jpg">
+                            <h4>Besabriyaan</h4>
+                            <h6>The Chainsmokers</h6>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <div>
+                            <img src="image/Hindi/Namo-namo.jpg">
+                            <h4>Namo Namo</h4>
+                            <h6>Imagine Dragons</h6>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <div>
+                            <img src="image/Hindi/Selfie.jpg">
+                            <h4>Selfie le le re</h4>
+                            <h6>Vishal Dadlani</h6>
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <div>
+                            <img src="image/Hindi/Pee-loon.jpg">
+                            <h4>Pee Loon</h4>
+                            <h6>Mohit Chauhan</h6>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- My playlist -->
+    <aside class="playlist">
+        <h2>Platlist</h2>
+        <ul style="list-style-type: num;">
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <span><img src="image/Hindi/phir-kabhi.jpg"></span>
+                        <div class="text"><span class="playlist-first-line">Phir Kabhi</span>
+                            <h5 class="playlist-second-line">Malik</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/Hindi/Geerua.jfif">
+                        <div class="text"><span class="playlist-first-line">Gerua</span>
+                            <h5 class="playlist-second-line">Arjit Singh</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/Hindi/Besabriyaan.jpg">
+                        <div class="text"><span class="playlist-first-line">Besabriyaan</span>
+                            <h5 class="playlist-second-line">Malik</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/Hindi/Namo-namo.jpg">
+                        <div class="text"><span class="playlist-first-line">Namo Namo</span>
+                            <h5 class="playlist-second-line">Malik</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/Hindi/Selfie.jpg">
+                        <div class="text"><span class="playlist-first-line">Selfie le le re</span>
+                            <h5 class="playlist-second-line">Vishal Dadlani</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/Hindi/Pee-loon.jpg">
+                        <div class="text"><span class="playlist-first-line">Pee Loon</span>
+                            <h5 class="playlist-second-line">Mohit chauhan</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/friends.jpg">
+                        <div class="text"><span class="playlist-first-line">Friends</span>
+                            <h5 class="playlist-second-line">Anne Marie</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/Levitating.jfif">
+                        <div class="text"><span class="playlist-first-line">Levitating</span>
+                            <h5 class="playlist-second-line">Dua Lipa</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/Closer.png">
+                        <div class="text"><span class="playlist-first-line">Closer</span>
+                            <h5 class="playlist-second-line">The chainsmokers</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/Believer.jpg">
+                        <div class="text"><span class="playlist-first-line">Believer</span>
+                            <h5 class="playlist-second-line">Imagine Dragons</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/2002.webp">
+                        <div class="text"><span class="playlist-first-line">2002</span>
+                            <h5 class="playlist-second-line">Anne Marie</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/Perfect.jfif">
+                        <div class="text"><span class="playlist-first-line">Perfect</span>
+                            <h5 class="playlist-second-line">Ed Sheeran</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/friends.jpg">
+                        <div class="text"><span class="playlist-first-line">Friends</span>
+                            <h5 class="playlist-second-line">Anne Marie</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/Levitating.jfif">
+                        <div class="text"><span class="playlist-first-line">Levitating</span>
+                            <h5 class="playlist-second-line">Dua Lipa</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="playlist-card">
+                        <span><img src="image/Hindi/phir-kabhi.jpg"></span>
+                        <div class="text"><span class="playlist-first-line">Phir Kabhi</span>
+                            <h5 class="playlist-second-line">Malik</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/Hindi/Geerua.jfif">
+                        <div class="text"><span class="playlist-first-line">Gerua</span>
+                            <h5 class="playlist-second-line">Arjit Singh</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/Hindi/Besabriyaan.jpg">
+                        <div class="text"><span class="playlist-first-line">Besabriyaan</span>
+                            <h5 class="playlist-second-line">Malik</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/Hindi/Namo-namo.jpg">
+                        <div class="text"><span class="playlist-first-line">Namo Namo</span>
+                            <h5 class="playlist-second-line">Malik</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/Hindi/Selfie.jpg">
+                        <div class="text"><span class="playlist-first-line">Selfie le le re</span>
+                            <h5 class="playlist-second-line">Vishal Dadlani</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/Hindi/Pee-loon.jpg">
+                        <div class="text"><span class="playlist-first-line">Pee Loon</span>
+                            <h5 class="playlist-second-line">Mohit chauhan</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/friends.jpg">
+                        <div class="text"><span class="playlist-first-line">Friends</span>
+                            <h5 class="playlist-second-line">Anne Marie</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/Levitating.jfif">
+                        <div class="text"><span class="playlist-first-line">Levitating</span>
+                            <h5 class="playlist-second-line">Dua Lipa</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/Closer.png">
+                        <div class="text"><span class="playlist-first-line">Closer</span>
+                            <h5 class="playlist-second-line">The chainsmokers</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/Believer.jpg">
+                        <div class="text"><span class="playlist-first-line">Believer</span>
+                            <h5 class="playlist-second-line">Imagine Dragons</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/2002.webp">
+                        <div class="text"><span class="playlist-first-line">2002</span>
+                            <h5 class="playlist-second-line">Anne Marie</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/Perfect.jfif">
+                        <div class="text"><span class="playlist-first-line">Perfect</span>
+                            <h5 class="playlist-second-line">Ed Sheeran</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/friends.jpg">
+                        <div class="text"><span class="playlist-first-line">Friends</span>
+                            <h5 class="playlist-second-line">Anne Marie</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+            <li><a href="#">
+                    <div class="playlist-card">
+                        <img src="image/English/Levitating.jfif">
+                        <div class="text"><span class="playlist-first-line">Levitating</span>
+                            <h5 class="playlist-second-line">Dua Lipa</h5>
+                        </div>
+                        <div class="playlist-heart"><i class="fas fa-heart"></i></div>
+                    </div>
+                </a></li>
+        </ul>
+
+    </aside>
+
+    <footer class="controller">
+        <div class="song-detail">
+            <div class="song-detail-image">
+                <img src="image/English/Levitating.jfif" height="75px" width="75px">
+            </div>
+            <div class="song-detail-name">
+                <div>
+                    <h4>Levitating</h4>
+                    <h6>Dua Lipa</h6>
+                </div>
+            </div>
+            <div class="song-detail-icon">
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-ban"></i></span>
+            </div>
+        </div>
+        <div class="song-duration">
+            <div class="icon-controller">
+                <span><a href=""><i class="fas fa-step-backward"></i></a></span>
+                <span><a href="#"><i id="play" class="fas fa-play"
+                            onClick="document.getElementById('Levitating_song_play').play(); return false;"></i></a></span>
+                <span><a href=""><i class="fas fa-step-forward"></i></a></span>
+            </div>
+            <div class="control">
+            </div>
+
+            <div class="current">
+            </div>
+
+        </div>
+        <div class="volume-controller">
+            <span><i class="fas fa-list-ul"></i></span>
+            <span><i class="fas fa-desktop"></i></span>
+            <span><i class="fas fa-volume-up"></i></span>
+            
+                <div class="volume-control">
+
+                </div>
+                <div class="volume-current">
+
+                </div>
+        </div>
+    </footer>
+
+
+    <!-- song -->
+    <audio id="closer_song_play">
+        <source src="music/Closer.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="friends_song_play">
+        <source src="music/FRIENDS.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="Levitating_song_play">
+        <source src="music/Levitating.mp3" type="audio/mp3">
+    </audio>
+    <audio id="girls-like-you">
+        <source src="music/Girls.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+
+
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "sun.png";
+            } else {
+                icon.src = "moon.png";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
