@@ -8,6 +8,10 @@ This is a simple music player project built using HTML and CSS. The project prov
 - Volume control
 - Simple and intuitive user interface
 
+## ScreenShots
+
+![Music player ss](https://github.com/ayushi2609/Music-Player/assets/93718986/2183c55f-93e4-4197-b1bf-e8578694fc52)
+
 # What I Learned
 During the development of this Music Player project using HTML and CSS, I gained valuable insights and learned several key concepts. Here are some of the takeaways:
 
